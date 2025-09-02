@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Page</h1>
+            <div class="theme-toggle">
+                <span class="toggle-text">Light Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-text">Dark Mode</span>
+            </div>
+        </header>
+        
+        <section id="theme-section">
+            <h2>Theme Toggle</h2>
+            <p>Switch between light and dark mode using the toggle in the header.</p>
+        </section>
+        
+        <section id="counter-section">
+            <h2>Counter Game</h2>
+            <div class="counter-game">
+                <div class="counter-value" id="counter">0</div>
+                <div class="game-buttons">
+                    <button id="decrement">-</button>
+                    <button id="increment">+</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq-section">
+            <h2>FAQ Section</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is JavaScript?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications and is supported by all modern web browsers.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What are JavaScript events?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    JavaScript events are actions or occurrences that happen in the browser, such as clicks, mouse movements, keyboard input, and page loading. Developers can write code to respond to these events.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is DOM manipulation?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    DOM manipulation refers to using JavaScript to interact with and modify the Document Object Model (DOM) of a web page. This allows developers to dynamically change content, styles, and structure of a page.
+                </div>
+            </div>
+        </section>
+        
+        <section id="tab-section">
+            <h2>Tabbed Interface</h2>
+            <ul class="tabs">
+                <li class="tab active" data-tab="tab1">Tab 1</li>
+                <li class="tab" data-tab="tab2">Tab 2</li>
+                <li class="tab" data-tab="tab3">Tab 3</li>
+            </ul>
+            <div id="tab1" class="tab-content active">
+                <h3>Content for Tab 1</h3>
+                <p>This is the content for the first tab. Tabs are useful for organizing content in a compact space.</p>
+            </div>
+            <div id="tab2" class="tab-content">
+                <h3>Content for Tab 2</h3>
+                <p>This is the content for the second tab. Each tab can contain different types of information.</p>
+            </div>
+            <div id="tab3" class="tab-content">
+                <h3>Content for Tab 3</h3>
+                <p>This is the content for the third tab. Users can click between tabs to view different content.</p>
+            </div>
+        </section>
+        
+        <section id="event-section">
+            <h2>Event Demonstration</h2>
+            <p>Interact with the box below to see different JavaScript events in action.</p>
+            <div class="event-demo" id="event-box">
+                <p>Move your mouse here, click, or press a key</p>
+                <div class="event-info" id="event-info"></div>
+            </div>
+        </section>
+        
+        <section id="form-section">
+            <h2>Form Validation</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error" id="name-error">Please enter a valid name (at least 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password">
+                    <div class="error" id="password-error">Password must be at least 8 characters with one number and one special character</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password">
+                    <div class="error" id="confirm-password-error">Passwords do not match</div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+                
+                <div class="success" id="form-success">Form submitted successfully!</div>
+            </form>
+        </section>
+    </div>
+
+    <script src=script.js></script>
+</body>
+</html>
